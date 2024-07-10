@@ -9,48 +9,47 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex h-screen items-center justify-center p-4 md:p-10">
-      <div className="absolute inset-0 bg-cover bg-center opacity-50 -z-20 -0" style={{ backgroundImage: "url('/images/background.jpeg')" }}>
-      </div>
-      <div className="absolute inset-0 -z-10 bg-[#c9c3c378]"></div>
-      <div className="grid w-[90vw] md:w-[70vw] lg:w-[50vw] h-[80vh] grid-cols-1  ">
-        <div className="bg-white text-black flex items-center justify-center flex-col rounded-2xl">
+    <main className="flex h-screen items-center absolute justify-center p-4 md:p-10 bg-hero bg-opacity-0.1 bg-white size-full bg-cover bg-center">
+      <div className="grid w-[90vw] md:w-[70vw] lg:w-[55vw] h-[80vh] grid-cols-1  ">
+        <div className="bg-white text-black flex items-center justify-center flex-col rounded-[6px] dark:bg-black dark:text-white">
           <div className="my-4">
-            <h1 className="text-3xl font-bold text-center justify-center">Sign in to Your Account</h1>
-            <p className="mt-2 text-xs text-center justify-center text-slate-400 mx-auto w-3/4">Welcome to a smarter way of managing tasks and products.Our comprehensive suit is designed to streamline your workflow,enhance collaboration.</p>
+            <h1 className="text-1.75xl lg:text-3xl font-bold text-center justify-center">Sign In to Your Account</h1>
+            <p className="mt-2 text-xs text-center justify-center text-slate-400 mx-auto w-5/6">Welcome to a smarter way of managing tasks and products.Our comprehensive suit is designed to streamline your workflow,enhance collaboration.</p>
 
           </div>
           <form className="w-3/4">
-            <Button className="flex items-center w-full px-4 md:px-12 bg-transparet rounded-s-lg gap-1" variant="outline">
+            <Button className="flex items-center w-full mt-2 px-4 md:px-12 bg-transparet rounded-[6px] gap-1 dark:text-white" variant="outline">
               <FcGoogle />
-              or Sign in with Google
+              Sign in with Google
             </Button>
 
             <div className=" mt-4 flex items-center mb-3">
               <div className="flex-grow border-t border-gray-300"></div>
-              <span className="mx-4 text-black">or</span>
+              <span className="mx-4 text-black dark:text-white">or</span>
               <div className="flex-grow border-t border-gray-300"></div>
             </div>
 
             <Label className="mb-4" htmlFor="email">Email</Label>
-            <Input className="mt-2 mb-4 w-[100%] bg-transparent rounded-lg  text-slate-400" type="email" id="email" placeholder="Enter your email"></Input>
+            <Input className="mt-2 mb-4 w-full bg-transparent rounded-[6px]  text-slate-400" type="email" id="email" placeholder="Enter your email"></Input>
 
             <Label htmlFor="password">Password</Label>
             <div className="relative">
               <Input
-                className="mt-2 mb-4 pr-10 bg-transparent rounded-lg text-slate-400" type="password" id="password" placeholder="Enter your password"
+                className="mt-2 mb-4 pr-10 bg-transparent rounded-[6px] text-slate-400" type="password" id="password" placeholder="Enter your password"
               />
               <IoEyeOutline className="absolute right-3 top-3 text-gray-400 cursor-pointer" />
             </div>
 
-            <div className="mt-0.5 mb-3 text-xs text-right   w-full">Forgot your password?</div>
+            <div className="mt-0.5 mb-1 text-xs lg:mb-3 text-right w-full dark:text-white">Forgot your password?</div>
 
-            <Button type="submit" className="w-full mt-6 bg-blue-600 text-white rounded-lg hover:bg-blue-900">
+            <Button type="submit" className="w-full mt-6 bg-blue-600 text-white rounded-[6px] hover:bg-blue-900">
               Sign in
             </Button>
           </form>
         </div>
       </div>
+      
+      {/* <div className="absolute inset-0 -z-10 bg-[#f9f7f79b]"></div> */}
 
     </main>
   );
