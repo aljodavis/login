@@ -9,8 +9,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex h-screen items-center absolute justify-center p-4 md:p-10 bg-hero bg-opacity-0.1 bg-white size-full bg-cover bg-center">
-      <div className="grid w-[90vw] md:w-[70vw] lg:w-[55vw] h-[80vh] grid-cols-1  ">
+    <main className="flex h-screen items-center relative justify-center p-4 md:p-10  bg-white size-full bg-cover bg-center">
+      <Image
+      src="/images/background.jpeg"
+      width={500}
+      height={500}
+      alt="Picture of the bg"
+      className="absolute h-screen w-screen opacity-30 object-cover "
+    />
+      <div className="grid w-[90vw] md:w-[70vw] z-10 lg:w-[50vw] h-[80vh] grid-cols-1">
         <div className="bg-white text-black flex items-center justify-center flex-col rounded-[6px] dark:bg-black dark:text-white">
           <div className="my-4">
             <h1 className="text-1.75xl lg:text-3xl font-bold text-center justify-center">Sign In to Your Account</h1>
