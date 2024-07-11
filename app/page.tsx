@@ -17,11 +17,11 @@ export default function Home() {
       alt="Picture of the bg"
       className="absolute h-screen w-screen opacity-30 object-cover "
     />
-      <div className="grid w-[90vw] md:w-[70vw] z-10 lg:w-[50vw] h-[80vh] grid-cols-1">
+      <div className="grid w-[90vw] h-[90vh] md:w-[70vw] z-10 lg:w-[50vw] lg:h-[80vh] grid-cols-1">
         <div className="bg-white text-black flex items-center justify-center flex-col rounded-[6px] dark:bg-black dark:text-white">
           <div className="my-4">
             <h1 className="text-1.75xl lg:text-3xl font-bold text-center justify-center">Sign In to Your Account</h1>
-            <p className="mt-2 text-xs text-center justify-center text-slate-400 mx-auto w-5/6">Welcome to a smarter way of managing tasks and products.Our comprehensive suit is designed to streamline your workflow,enhance collaboration.</p>
+            <p className="mt-2 text-sm lg:text-xs  text-center justify-center text-slate-400 mx-auto w-5/6">Welcome to a smarter way of managing tasks and products.Our comprehensive suit is designed to streamline your workflow,enhance collaboration.</p>
 
           </div>
           <form className="w-3/4">
